@@ -7,14 +7,16 @@ import Greet from "./Greet";
  * It should render hello followed by the name.
  */
 
-test("Greet renders correctly", () => {
-  render(<Greet />);
-  const textElemet = screen.getByText("Hello");
-  expect(textElemet).toBeInTheDocument();
-});
+describe("Greet", () => {
+  test("renders correctly", () => {
+    render(<Greet />);
+    const textElemet = screen.getByText("Hello");
+    expect(textElemet).toBeInTheDocument();
+  });
 
-test("Greet renders name when passed as prop", () => {
-  render(<Greet name="Ericjay" />);
-  const textElemet = screen.getByText("Hello Ericjay");
-  expect(textElemet).toBeInTheDocument();
+  test("Greet renders name when passed as prop", () => {
+    render(<Greet name="Ericjay" />);
+    const textElemet = screen.getByText("Hello Ericjay");
+    expect(textElemet).toBeInTheDocument();
+  });
 });
