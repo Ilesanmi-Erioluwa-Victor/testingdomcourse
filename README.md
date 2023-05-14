@@ -27,16 +27,16 @@ When testing your components or function, you can group all your test together u
 `describe` accept two parameters which is `describe(name, function)`, *name* is the first argument, which is the group name. The second argument is a function that contains the expectations tests.
 e.g
 `import { render, screen } from "@testing-library/react";
-import Greet from "./Greet";
+import Greet from "./Greet";`
 
-describe("Greet", () => {
+`describe("Greet", () => {
   test("renders correctly", () => {
     render(<Greet />);
     const textElemet = screen.getByText("Hello");
     expect(textElemet).toBeInTheDocument();
-  });
+  });`
 
-  test("Greet renders name when passed as prop", () => {
+  `test("Greet renders name when passed as prop", () => {
     render(<Greet name="Ericjay" />);
     const textElemet = screen.getByText("Hello Ericjay");
     expect(textElemet).toBeInTheDocument();
