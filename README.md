@@ -25,8 +25,7 @@ This process involves three phases which are :
 ### Grouping of Test
 When testing your components or function, you can group all your test together using `describe`
 `describe` accept two parameters which is `describe(name, function)`, *name* is the first argument, which is the group name. The second argument is a function that contains the expectations tests.
-e.g
-`import { render, screen } from "@testing-library/react";
+e.g  `import { render, screen } from "@testing-library/react";
 import Greet from "./Greet";`
 
 `describe("Greet", () => {
