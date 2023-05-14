@@ -28,7 +28,7 @@ When testing your components or function, you can group all your test together u
 e.g  <br> `import { render, screen } from "@testing-library/react";`
 <br> ` import Greet from "./Greet";`
 
-`describe("Greet", () => {
+`describe("Greet", () => { <br>
   test("renders correctly", () => {
     render(<Greet />);
     const textElemet = screen.getByText("Hello");
