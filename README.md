@@ -36,7 +36,7 @@ e.g  <br> `import { render, screen } from "@testing-library/react";`
   });`
 
   `test("Greet renders name when passed as prop", () => {
-    render(<Greet name="Ericjay" />);
+  render(<Greet name="Ericjay" />);
     const textElemet = screen.getByText("Hello Ericjay");
     expect(textElemet).toBeInTheDocument();
   });
