@@ -1,9 +1,12 @@
 import React from 'react'
+type nameProps = {
+    name? : string
+}
 
-const Greet = () => {
+const Greet = (props : nameProps) => {
   return (
     <div>
-      Hello 
+      Hello {props.name}
     </div>
   )
 }
