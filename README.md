@@ -168,3 +168,10 @@ You can check out the official docs for more info's.
 
  - **`getByPlaceholderText :`**
   `getByPlaceholderText` will search for all elements with a placeholder attribute and find one that matches the given text.
+   <br>
+- **`getByText :`**
+  `getByText` will search for all elements that have a text node with textContent matching the given text. 
+  <br>
+
+- **`getByDisplayValue :`**
+ `getByDisplayValue` returns the input, textarea, or select that has the matching display value.
