@@ -163,4 +163,8 @@ other key names can also be as an option in `getByRole` which are :
 You can check out the official docs for more info's.
 <br>
 - **`getByLabelText :`**
- `getByLabelText` will search for the label that matches the given text, then find the element associated with that label.
+ `getByLabelText` will search for the label that matches the given text, then find the element associated with that label. 
+ <br>
+
+ - **`getByPlaceholderText :`**
+  `getByPlaceholderText` will search for all elements with a placeholder attribute and find one that matches the given text.
