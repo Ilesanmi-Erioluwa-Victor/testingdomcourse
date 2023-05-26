@@ -3,6 +3,8 @@ import React from 'react';
 const Application = () => {
   return (
     <form>
+      <h3>Job Application Form</h3>
+      <h2>User Section</h2>
       <fieldset>
         <label htmlFor='name'>Name</label>
         <input

@@ -7,9 +7,14 @@ describe('Application', () => {
     const nameElement = screen.getByRole('textbox', {
       name: /surname/i,
     });
+
     expect(nameElement).toBeInTheDocument();
 
-    const jobLocation = screen.getByRole('combobox'); 
+    const pageTitle = screen.getByRole('heading', {
+      name : "Job Application Form"
+    });
+    expect(pageTitle).toBeInTheDocument();
+    const jobLocation = screen.getByRole('combobox');
     expect(jobLocation).toHaveLength(6);
   });
 });
