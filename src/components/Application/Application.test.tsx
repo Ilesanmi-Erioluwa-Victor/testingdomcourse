@@ -11,9 +11,16 @@ describe('Application', () => {
     expect(nameElement).toBeInTheDocument();
 
     const pageTitle = screen.getByRole('heading', {
-      name : "Job Application Form"
+      name: 'Job Application Form',
     });
     expect(pageTitle).toBeInTheDocument();
+
+    const sectionHeading = screen.getByRole('heading', {
+      level: 4,
+    });
+
+    expect(sectionHeading).toBeInTheDocument();
+
     const jobLocation = screen.getByRole('combobox');
     expect(jobLocation).toHaveLength(6);
   });
