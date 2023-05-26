@@ -153,3 +153,13 @@ describe("Greet", () => {
 });
 
 ```
+other key names can also be as an option in `getByRole` which are :
+- **level** 
+ as for level for heading in `HTML` level 1 - level 6 (h1 - h6)
+- **hidden**
+- **selected**
+- **pressed**
+- **checked**
+You can check out the official docs for more info's.
+<br>
+- **`getByRole :`**

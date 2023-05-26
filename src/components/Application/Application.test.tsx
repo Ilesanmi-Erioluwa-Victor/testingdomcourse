@@ -11,12 +11,12 @@ describe('Application', () => {
     expect(nameElement).toBeInTheDocument();
 
     const pageTitle = screen.getByRole('heading', {
-      name: 'Job Application Form',
+    level : 3,
     });
     expect(pageTitle).toBeInTheDocument();
 
     const sectionHeading = screen.getByRole('heading', {
-      level: 4,
+      level: 2,
     });
 
     expect(sectionHeading).toBeInTheDocument();
