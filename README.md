@@ -175,3 +175,15 @@ You can check out the official docs for more info's.
 
 - **`getByDisplayValue :`**
  `getByDisplayValue` returns the input, textarea, or select that has the matching display value.
+ <br>
+
+- **`getByAltText :`**
+`getByAltText` will return the element that has the matching alt text.
+<br>
+
+- **`getByTitle :`**
+`getByTitle` will return the element that has the matching title
+ <br>
+
+- **`getByTestId :`**
+  `getByTestId ` returns the element that has the matching data-testid attribute
